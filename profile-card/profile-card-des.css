@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins";
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border-radius: 24px;
+    max-width: 370px;
+    width: 100%;
+    padding: 25px;
+    position: relative;
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0px 0px;
+    background-color: blueviolet;
+}
+.image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    padding: 3px;
+    background-color: blueviolet;
+    margin: 0px;
+    margin-top: 50px;
+}
+.image .pic{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border-color: blueviolet;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.media-buttons{
+    display: flex;
+    justify-content: center;
+    
+}
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color:#4070f4;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.profile-card .connect{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+button{
+    background-color: #4070f4;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 24px;
+    margin:0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.card-like{
+    display: flex;
+    justify-content: space-between;
+}
+.card-like .data{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 25px;
+    color: #333;
+    border-right: 2px solid #e7e7e7;
+}
+.data:last-child{
+    border-right: none;
+}
