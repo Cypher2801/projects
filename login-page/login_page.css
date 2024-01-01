@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins",Arial;
+}
+body{
+    background-color: #1ABC9B;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+}
+.container header{
+    background-color: rgb(21,161,131);
+    width: 100%;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container .login-credentials{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container .login-credentials .user-creds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .login-credentials .user-creds i{
+    background-color: rgb(21,161,131);
+    font-size: 18px;
+    color: white;
+    border-radius: 2px 0px 0px 2px;
+    padding: 5.8px;
+    margin-right: -1px;
+}
+.container .login-credentials .user-creds input{
+    padding: 4px;
+    color: #1ABC9B;
+    border: 0.1px solid #1abc9c6e;
+    border-left-color: rgb(21,161,131);
+    border-radius: 0px 2px 2px 0px;
+}
+.container .login-credentials .password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.container .login-credentials .password i{
+    background-color: rgb(21,161,131);
+    font-size: 18px;
+    color: white;
+    border-radius: 2px 0px 0px 2px;
+    padding: 5.8px;
+    margin-right: -1px;
+}
+.container .login-credentials .password input{
+    padding: 4px;
+    color: #1ABC9B;
+    border: 0.1px solid #1abc9c6e;
+    border-left-color: rgb(21,161,131);
+    border-radius: 0px 2px 2px 0px;
+}
+.container a{
+    text-decoration: none;
+    color: rgb(21,161,131);
+    font-size: 12px;
+    margin-left: 0px;
+    margin-bottom:10px ;
+    margin-top: 3px;
+    transition: all 0.15s;
+}
+.container a:hover{
+    text-decoration: underline;
+}
+.container button{
+    background-color: rgb(21,161,131);
+    border:none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.container button:hover{
+    background-color: #1ABC9B;
+}
+.foot{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.foot span{
+    color: rgb(21,161,131);
+    padding-left: 5px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.foot span:hover{
+    text-decoration: underline;
+}
