@@ -65,7 +65,6 @@ section::after{
 }
 
 .card.back-face{
-    
     position: absolute;
     top: 0px;
     transform: rotateY(180deg);
