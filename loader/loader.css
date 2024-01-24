@@ -1,0 +1,56 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+body div{
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 100px solid black;
+    border-radius: 400px;
+    
+}
+body div::before{
+    content: "";
+    background-color: lightgoldenrodyellow;
+    position: absolute;
+    top: 0;
+    transform: translateY(-10%);
+    height: 300px;
+    width: 150px;
+    z-index: -1;
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,1,1);
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+}
+body div::after{
+    content: "";
+    position: absolute;
+    border-radius: 150px;
+    inset: 10px;
+    background-color:black;
+}
+@keyframes myAnimation {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8,37,45);
+}
+body h2{
+    border: none;
+    outline: none;
+    text-align: center;
+    max-width: 100%;
+    background-color: rgb(8,37,45);
+    color:rgb(18,51,63);
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    word-spacing: 5px;
+    line-height: 0.7em;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    animation: anime 6s  1s infinite alternate forwards;
+}
+
+@keyframes anime {
+    0%,18%,25%,30%,43%,53%,64%,80%,92%
+    {
+        color: rgb(18,51,63);
+        text-shadow: none;
+    }
+    100%,18.4%,27%,35%,43.6%,55.6%,65%,82.1%,92.1%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}

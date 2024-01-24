@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",Arial;
+    
+}
+body{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dad3f8;
+    color: #333;
+}
+.container{
+    background-color: white;
+    padding: 40px 20px 40px 20px;
+    border-radius: 12px;
+    max-width: 950px;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.container .content{
+    display: flex;
+    align-items: center;
+}
+.container .h1{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 40px;
+}
+.container .list{
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 22px;
+    width: 20%;
+    position: relative;
+    margin-right: 50px;
+}
+.container .list label{
+    height: 60px;
+    color: #333;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin:0px 0px 5px 0px;
+    z-index: 12;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.container .list label:hover{
+    color: #6d50e2;
+}
+.container .list label span{
+    pointer-events: none;
+}
+
+.container .list .indicator{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: #6d50e2;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+#home,#blog,#help,#code,#about{
+    visibility: hidden;
+}
+#home:checked ~ .content .list .indicator{
+top:0;
+}
+#blog:checked ~ .content .list .indicator{
+    top:65px;
+}
+#help:checked ~ .content .list .indicator{
+    top:130px;
+}
+#code:checked ~ .content .list .indicator{
+    top:195px;
+}
+#about:checked ~ .content .list .indicator{
+    top:260px;
+}
+#home:checked ~ .content .list .home,
+#code:checked ~ .content .list .code,
+#help:checked ~ .content .list .help,
+#about:checked ~.content  .list .about,
+#blog:checked ~  .content .list .blog{
+color: white;
+}
+.container .content .text-content{
+    max-width: 75%;
+    height: 100%;
+    transition: all 0.3s;
+}
+.container .content .text-content .title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.container .content .text-content p{
+    text-align: justify;
+    margin-right: 100px;
+}
+.container .content .text-content .text{
+   display: none;
+}
+#home:checked ~ .content .text-content .home ,
+#blog:checked ~ .content .text-content .blog ,
+#help:checked ~ .content .text-content .help ,
+#about:checked ~ .content .text-content .about ,
+#code:checked ~ .content .text-content .code {
+    display: block;
+    
+}

@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100%;
+    
+}
+header{
+    display: flex;
+    height: 60px;
+    max-width: 100%;
+    position: relative;
+    align-items: center;
+    background-color: #282828;
+}
+.logo{
+    height:50%;
+   margin-right: 10px;
+    margin-left:20px;
+}
+.buttons{
+    margin-left:30px ;
+}
+.buttons button{
+    background-color: #282828;
+    color: #9F9F9F;
+    border: none;
+    font-size: 20px;
+    margin-right:15px ;
+    font-weight: 400;
+
+}
+.buttons .store{
+color: #FB9E15;
+margin-left: 5px;
+}
+.buttons button:hover{
+    color: white;
+    cursor: pointer;
+}
+header .right{
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .right i{
+    margin-right: 30px;
+    font-size:20px;
+    color: #9F9F9F;
+    text-align: center;
+    cursor: pointer;
+
+}
+header .right i:hover{
+    color: white;
+}
+#user{
+    color: white;
+    background-color: grey;
+    padding: 3px;
+   margin-right: 10px;
+    border-radius: 50%;
+    scale: 1.2;
+}
+
+header .right button{
+    background-color: rgb(66,55,37);
+    color: rgb(251,158,21);
+    padding: 8px 20px;
+    border: none;
+    font-family: "Cookie";
+    border-radius: 10px;
+    font-size: 20px;
+}
+header .right button:hover{
+    cursor: pointer;
+    background-color: rgb(149, 110, 47) ;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(70,70,70) 0.5%,rgb(54,54,54)19.5%,rgb(40,40,40) 80%);
+}
+main .tag{
+    text-align: center;
+    padding-top: 300px;
+    
+    transform: translateY(-50%);
+}
+main .tag .plan{
+    font-size: 100px;
+    font-family:"Cookie";
+    color: white; 
+}
+main .tag .sub{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.plans{
+    width: 90%;
+    align-items: center;
+    display: flex;
+   
+}
+.plans .monthly,.plans .yearly{
+    background-color: #F7F7F7;
+    padding: 30px 30px 40px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.plans .monthly,.plans .yearly{
+    color: rgb(110,110,110);
+}
+.plans .line1{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 20px;
+}
+.plans .line1 .duration{
+    color: black;
+    font-weight: 700;
+    font-size: 35px;
+    margin-right: 10px;
+}
+.plans .line1 .sub{
+    font-size: 18px;
+    transform: translateY(-27%);
+}
+.plans  .description1{
+    font-weight: 500;
+}
+.plans  .description2{
+    margin-bottom: 20px;
+}
+.plans p{
+    color:black;
+}
+.plans p .price{
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+}
+.plans p .original{
+    font-size: 18px;
+    text-decoration: line-through;
+    transform: translateY(-10%);
+}
+.plans p .dur{
+    font-size: 18px;
+    transform: translateY(-10%);
+}
+.line3{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.line3 p{
+    width: 300px;
+}
+.line3 .line2{
+    transform: translateY(-25%);
+    text-align: right;
+   
+}
+.plans .yearly{
+    margin-left: 20px;
+    background: linear-gradient(135deg,rgb(252,226,169),rgb(255,151,91));
+    padding: 60px 50px 60px 50px;
+    box-shadow: 0 0 5px  rgb(252,226,169);
+}
+.yearly .description2{
+    margin-bottom: 60px;
+}
+.monthly button,.yearly button{
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width:1000px){
+    .plans{
+        flex-direction: column;
+       
+    }
+    .monthly{
+        scale: 1.05;
+        margin-left: 10px;
+    }
+    
+}
+@media (max-width:600px){
+    .plans{
+        scale: 0.8;
+    }
+    
+}
+@media (max-width:900px){
+    .buttons{
+        display: none;
+    }
+}
+
+.perks{
+    display: grid;
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-top: 40px    ;
+    grid-template-columns: 1fr 1fr;
+}
+.perks .part{
+    margin-bottom: 40px;
+}
+.perks .part h5{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+
+}
+.perks .part h5 i{
+    color: rgb(89,89,89);
+}
+.perks .part p
+{
+    color:rgb(158,160,162);
+    font-size: 22px;
+    margin-right: 10px;
+    margin-left: 25px;  
+
+}
+.coustomer-rev{
+    display: flex;
+    max-width: 100%;
+    min-height: 400px;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 80px 80px 80px;
+    position: relative;
+
+}
+.coustomer-rev .head{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;   
+    width: 262px;
+    padding: 0px;
+    
+}
+.coustomer-rev  .fb,.brainly,.amazon{
+    max-width: 262px;
+    min-height: 302px;
+    background-color: white;
+    padding: 30px 30px 30px 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.coustomer-rev  .fb i{
+    color: white;
+    background-color: blue;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.coustomer-rev  div p{
+    color: rgb(49,49,49);
+    margin-top:60px ;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.coustomer-rev  div span{
+    font-weight: 500;
+}
+
+.coustomer-rev  .brainly i {
+    color: white;
+    background-color: blue;
+    font-size: 30px;
+    border-radius: 50%;
+}
+.coustomer-rev  .amazon .companies{
+    font-size: 40px;
+}
+
+.coustomer-rev  .brainly {
+    transform: translateY(20%);
+}
+
+.coustomer-rev  .amazon{
+    transform: translateY(-15%);
+}
+
+
+
+footer{
+    background-color: rgb(40,40,40);
+    padding: 80px 40px 80px 40px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .questions
+{
+    margin-right: 80px;
+}
+
+footer .questions input{
+    visibility: hidden;
+}
+
+
+footer .questions input{
+   width: 10px;
+}
+.questions label .q1,
+.questions label .q2,
+.questions label .q3,
+.questions label .q4,
+.questions label .q5
+
+{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 40px 0 40px 20px;
+    border-bottom:1px solid rgb(62,62,62) ;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.questions label .q1 .q1text,
+.questions label .q2 .q2text,
+.questions label .q3 .q3text,
+.questions label .q4 .q4text,
+.questions label .q5 .q5text
+{
+    font-weight: 400;
+    color: rgb(186,188,191);    
+    font-size: 18px;
+    max-width: 80%;
+    margin-top: 40px;
+    display: none;
+    transition: display 0.3s;
+}
+.questions label i{
+    margin-left: 300px;
+    transition: all 0.5s;
+}
+footer .head{
+    width: 20%;
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+   
+}
+#q2:checked ~ label .q2 .q2text
+{
+    display: block;
+}
+#q1:checked ~ label .q1 .q1text
+{
+    display: block;
+}
+#q3:checked ~ label .q3 .q3text
+{
+    display: block;
+}
+#q4:checked ~ label .q4 .q4text
+{
+    display: block;
+}
+#q5:checked ~ label .q5 .q5text
+{
+    display: block;
+}
+
+#q2:checked ~ label .q2 i,
+#q1:checked ~ label .q1 i,
+#q3:checked ~ label .q3 i,
+#q4:checked ~ label .q4 i,
+#q5:checked ~ label .q5 i
+{
+    transform: rotateZ(45deg);
+}

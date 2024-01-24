@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+
+    <div class="content" onkeydown="
+        if(event.key=='Backspace'){
+            del();
+        }
+        else if(event.key=='Escape'){
+            update();
+        }
+        else if(event.key=='1'){
+                updatecalc('1');
+            }
+else if(event.key=='2'){
+                updatecalc('2');
+            }
+else if(event.key=='3'){
+                updatecalc('3');
+            }
+else if(event.key=='+'){
+                updatecalc('+');
+            }
+else if(event.key=='4'){
+                updatecalc('4');
+            }
+else if(event.key=='5'){
+                updatecalc('5');
+            }
+else if(event.key=='6'){
+                updatecalc('6');
+            }
+else if(event.key=='-'){
+                updatecalc('-');
+            }
+else if(event.key=='7'){
+                updatecalc('7');
+            }
+else if(event.key=='8'){
+                updatecalc('8');
+            }
+else if(event.key=='9'){
+                updatecalc('9');
+            }
+else if(event.key=='*'){
+                updatecalc('*');
+            }
+else if(event.key=='0'){
+                updatecalc('0');
+            }
+else if(event.key=='.'){
+                updatecalc('.');
+            }
+else if(event.key=='Enter'){
+                calculate();
+            }
+else if(event.key=='/'){
+                updatecalc('/');
+            }
+        ">
+        <p class="display" ></p>
+        <div class="line1">
+            <button class="number" onclick="updatecalc('1')" onkeydown="
+                
+                
+            " >1</button>
+            <button class="number" onclick="updatecalc('2')" onkeydown="
+            
+            
+            ">2</button>
+            <button class="number" onclick="updatecalc('3')" onkeydown="
+            
+            
+            ">3</button>
+            <button class="calc_sign" onclick="updatecalc('+')" onkeydown="
+            
+            
+            ">+</button>
+        </div>
+        <div class="line2">
+            <button class="number" onclick="updatecalc('4')" onkeydown="
+                
+                
+            ">4</button>
+            <button class="number" onclick="updatecalc('5')" onkeydown="
+            
+            
+            ">5</button>
+            <button class="number" onclick="updatecalc('6')" onkeydown="
+            
+            
+            ">6</button>
+            <button class="calc_sign" onclick="updatecalc('-')" onkeydown="
+            
+            
+            ">-</button>
+        </div>
+        <div class="line3">
+            <button class="number" onclick="updatecalc('7')" onkeydown="
+                
+                
+            ">7</button>
+            <button class="number" onclick="updatecalc('8')" onkeydown="
+            
+            
+            ">8</button>
+            <button class="number" onclick="updatecalc('9')" onkeydown="
+            
+            
+            ">9</button>
+            <button class="calc_sign" onclick="updatecalc('*')" onkeydown="
+            
+            
+            ">*</button>
+        </div>
+        <div class="line4">
+            <button class="number" onclick="updatecalc('0')" onkeydown="
+                
+                
+            ">0</button>
+            <button class="number" onclick="updatecalc('.')" onkeydown="
+            
+            
+            ">.</button>
+            <button class="number" onclick="calculate()" onkeydown="
+            
+            ">=</button>
+            <button class="calc_sign" onclick="updatecalc('/')" onkeydown="
+            
+            
+            ">/</button>
+        </div>
+        
+
+    </div>
+    <button onclick="update()">Clear</button>
+    
+
+
+    <script src="calc.js">
+
+    </script>
+</body>
+</html>
