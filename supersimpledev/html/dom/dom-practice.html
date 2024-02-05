@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+    
+</head>
+<body>
+    <div class="yt">
+        <p class="Subscribe">YouTube Subscribe Button</p>
+        <button onclick="
+        const buttonele=document.querySelector('.yt-button');
+        if(buttonele.innerHTML==='Subscribe'){
+            buttonele.innerHTML='Subscribed';
+        }
+        else{
+            buttonele.innerHTML='Subscribe';
+        }
+        "class="yt-button">Subscribe</button>
+    </div>
+    
+    <div class="amazon">
+        <span>
+            Amazon Shipping Calculator<br>
+    
+    Orders under $40 = +$10 shipping.<br>
+    Orders over $40 = FREE shipping.<br>
+        </span>
+        <input type="text" placeholder="Cost of order" class="cost" onkeydown="
+        if(event.key==='Enter'){
+            netval();
+        }
+        ">
+    <input onkeyup="
+    const netele=document.querySelector('.net');
+    netele.innerHTML=`Wake up`;
+    "
+    onkeydown="
+    const netele=document.querySelector('.net');
+    netele.innerHTML=`Going good`;
+    ">
+        <button onclick="
+        netval();
+        "  >Calculate</button>
+        <p class="net"> </p>
+    </div>
+    
+    <script src="dom.js">
+
+    </script>
+</body>
+</html>
